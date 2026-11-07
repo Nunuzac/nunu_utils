@@ -1,0 +1,37 @@
+[package]
+name = "navigation-utils"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "navigation_utils"
+path = "lib/navigation_utils.rs"
+
+[[bin]]
+name = "kitty-launch-os-window"
+path = "src/launch_os_window.rs"
+
+[[bin]]
+name = "kitty-launch-window"
+path = "src/launch_window.rs"
+
+[[bin]]
+name = "move-focus"
+path = "src/move_focus.rs"
+
+[[bin]]
+name = "quit-focus"
+path = "src/quit_focus.rs"
+
+[[bin]]
+name = "resize-focus"
+path = "src/resize_focus.rs"
+
+[dependencies]
+log = "0.4.34"
+niri-ipc = "26.4.0"
+procfs = "0.18.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+simplelog = "0.12.2"
+
